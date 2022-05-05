@@ -3,7 +3,10 @@
 FILE=".makefile_updater.config"
 
 
-
+if [ "$1 == "reset" ]
+then
+	rm ".makefile_updater.config"
+fi
 
 if test -f "$FILE"
 then
@@ -48,7 +51,7 @@ else
 fi
 
 
-NEW_SOURCES=$(ls -m $SOURCES*.c | tr -d ',')
+NEW_SOURCES=$(ls -m ../$SOURCES*.c | tr -d ',')
 
 NEWLINE="${SOURCES_NAME} = ${NEW_SOURCES}"
 
