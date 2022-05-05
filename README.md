@@ -11,6 +11,9 @@ Makefile_updater
 
 This script will ask you for some information before updating your Makefile.
 A config file will be created the first time, for not having to answer again every time.
+ 
+/!\ For the moment, work only if the sources in the Makefile are in line
+
 
 ## Install
 
