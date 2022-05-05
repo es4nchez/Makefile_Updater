@@ -17,17 +17,16 @@ A config file will be created the first time, for not having to answer again eve
 * Go in the directory of your Makefile
 * `git clone https://github.com/es4nchez/makefile_updater.git`
 * `cd makefile_updater``
-* `chmod +x updater.sh`
-* `./updater.sh`
+* `chmod +x updater`
+* `./updater`
 
 
 ## Commands
 
-- `./updater.sh reset` - reset the config file, and ask you again for info
+- `./updater reset` - reset the config file, and ask you again for info
 
 ## TO-DO list
 
  * Take other extension of file, like .cpp / .h
- * Remove the cp, and make the script work from the repo
  * Everything that go in my mind
  
