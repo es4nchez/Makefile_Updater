@@ -17,8 +17,7 @@ A config file will be created the first time, for not having to answer again eve
 
 ## Commands
 
-* ./updater.sh -reset
--> reset the config file, and ask you again for info
+- `./updater.sh reset` - reset the config file, and ask you again for info
 
 ## TO-DO list
 
