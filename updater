@@ -3,7 +3,7 @@
 FILE=".makefile_updater.config"
 
 
-if [ "$1 == "reset" ]
+if [ "$1" == "reset" ]
 then
 	rm ".makefile_updater.config"
 fi
