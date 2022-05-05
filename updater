@@ -1,19 +1,19 @@
 #!/bin/bash
 
-FILE=".makefile_updater.config"
+CFG_FILE=".makefile_updater.config"
 
 
 if [ "$1" == "reset" ]
 then
-	rm ".makefile_updater.config"
+	rm "$CFG_FILE"
 fi
 
-if test -f "$FILE"
+if test -f "$CFG_FILE"
 then
 	echo "Config found"
-	source ".makefile_updater.config"
+	source "$CFG_FILE"
 else
-	touch ".makefile_updater.config"
+	touch "$CFG_FILE"
 	while :
 	do
 		read -p 'Are we in the Makefile directory ? [y=yes/n=no] : ' ANSWER
@@ -46,8 +46,8 @@ else
 		echo 'Wrong INPUT. please write y or n'
 	done
 	read -p 'Last question. what is the name of the SOURCES in your makefile ? : ' SOURCES_NAME
-	echo "SOURCES=${SOURCES}" >> ".makefile_updater.config"
-	echo "SOURCES_NAME=${SOURCES_NAME}" >> ".makefile_updater.config"
+	echo "SOURCES=${SOURCES}" >> "$CFG_FILE"
+	echo "SOURCES_NAME=${SOURCES_NAME}" >> "$CFG_FILE"
 fi
 
 cd ..
@@ -57,7 +57,6 @@ NEWLINE="${SOURCES_NAME} = ${NEW_SOURCES}"
 
 while IFS= read -r line
 do
-   ## take some action on $line
   if [[ $line == *"$SOURCES_NAME"* ]]
   then
     echo $NEWLINE
