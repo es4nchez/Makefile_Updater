@@ -2,9 +2,9 @@ Makefile_updater
 ================
 
   * [Description](#Description)
-  * [Processes and Basic Features](#processes-and-basic-features)
-  * [Interactive Sessions](#interactive-sessions)
-  * [Networking](#networking)
+  * [Install](#Install)
+  * [Commands](#Commands)
+  * [TO-DO list](#TO-DO list)
 
 
 ## Description
