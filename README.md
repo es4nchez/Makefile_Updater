@@ -15,8 +15,8 @@ A config file will be created the first time, for not having to answer again eve
 ## Install
 
 * Go in the directory of your Makefile
-*  `git clone https://github.com/es4nchez/makefile_updater.git`
-* `cp Makefile_Updater/updater.sh updater.sh`
+* `git clone https://github.com/es4nchez/makefile_updater.git`
+* `cd makefile_updater``
 * `chmod +x updater.sh`
 * `./updater.sh`
 

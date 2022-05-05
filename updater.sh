@@ -34,9 +34,9 @@ else
 			if [ "$ANSWER" == "y" ]
 			then
 				read -p 'Please write the name of the directory : ' SOURCES
-				SOURCES="${SOURCES}/"
+				SOURCES="../${SOURCES}/"
 			else
-				SOURCES=
+				SOURCES="../"
 			fi
 			break
 		fi
@@ -57,9 +57,9 @@ do
    ## take some action on $line
   if [[ $line == *"$SOURCES_NAME"* ]]
   then
-  	sed -i "" "s|$line|$NEWLINE|" "Makefile"
+  	sed -i "" "s|$line|$NEWLINE|" "../Makefile"
   	break
   fi
-done < "Makefile"
+done < "../Makefile"
 
 echo "Sources updated."
