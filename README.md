@@ -16,7 +16,7 @@ A config file will be created the first time, for not having to answer again eve
 
 * Go in the directory of your Makefile
 * `git clone https://github.com/es4nchez/makefile_updater.git`
-* `cd makefile_updater``
+* `cd makefile_updater`
 * `chmod +x updater`
 * `./updater`
 
