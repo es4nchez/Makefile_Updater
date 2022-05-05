@@ -36,4 +36,4 @@ A config file will be created the first time, for not having to answer again eve
  
 # Contribution
 
- If you have idea for new functionalities or for upgrade some strange-coded parts, dont hesitate, all commit are welcome :)
+ If you have idea for new functionalities or for upgrade some strange-coded parts, dont hesitate, all commits are welcome :)
