@@ -5,6 +5,7 @@ Makefile_updater
   * [Install](#Install)
   * [Commands](#Commands)
   * [TO-DO list](#TO-DO-list)
+  * [Contribution](#contribution)
 
 
 ## Description
@@ -12,7 +13,7 @@ Makefile_updater
 This script will ask you for some information before updating your Makefile.
 A config file will be created the first time, for not having to answer again every time.
  
-/!\ For the moment, work only if the sources in the Makefile are in line
+/!\ At this time, work only if the sources in the Makefile are in line
 
 
 ## Install
@@ -33,3 +34,6 @@ A config file will be created the first time, for not having to answer again eve
  * Take other extension of file, like .cpp / .h
  * Everything that go in my mind
  
+# Contribution
+
+ If you have idea for new functionalities or for upgrade some strange-coded parts, dont hesitate, all commit are welcome :)
