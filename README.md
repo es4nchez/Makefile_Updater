@@ -32,7 +32,9 @@ A config file will be created the first time, for not having to answer again eve
 ## TO-DO list
 
  * Take other extension of file, like .cpp / .h
+ * Works only when pwd is the repo, maybe change for the possiblity to call the script outside of the repo
  * Everything that go in my mind
+
  
 ## Contribution
 
