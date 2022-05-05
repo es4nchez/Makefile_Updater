@@ -4,7 +4,7 @@ Makefile_updater
   * [Description](#Description)
   * [Install](#Install)
   * [Commands](#Commands)
-  * [TO-DO list](#TO-DO list)
+  * [TO-DO list](#TO-DO-list)
 
 
 ## Description
