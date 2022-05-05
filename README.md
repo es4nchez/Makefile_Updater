@@ -27,4 +27,7 @@ A config file will be created the first time, for not having to answer again eve
 
 ## TO-DO list
 
- * A lot
+ * Take other extension of file, like .cpp / .h
+ * Remove the cp, and make the script work from the repo
+ * Everything that go in my mind
+ 
