@@ -16,9 +16,9 @@ A config file will be created the first time, for not having to answer again eve
 
 * Go in the directory of your Makefile
 * Git clone the repostitory
-* cp Makefile_Updater/updater.sh updater.sh
-* ./chmod +x updater.sh
-* ./updater.sh
+* 'cp Makefile_Updater/updater.sh updater.sh'
+* 'chmod +x updater.sh'
+* './updater.sh'
 
 
 ## Commands
