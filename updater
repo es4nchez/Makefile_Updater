@@ -37,9 +37,9 @@ else
 			if [ "$ANSWER" == "y" ]
 			then
 				read -p 'Please write the name of the directory : ' SOURCES
-				SOURCES="../${SOURCES}/"
+				SOURCES="${SOURCES}/"
 			else
-				SOURCES="../"
+				SOURCES=""
 			fi
 			break
 		fi
@@ -50,8 +50,8 @@ else
 	echo "SOURCES_NAME=${SOURCES_NAME}" >> ".makefile_updater.config"
 fi
 
-
-NEW_SOURCES=$(ls -m ../$SOURCES*.c | tr -d ',')
+cd ..
+NEW_SOURCES=$(ls -m $SOURCES*.c | tr -d ',')
 
 NEWLINE="${SOURCES_NAME} = ${NEW_SOURCES}"
 
@@ -60,9 +60,15 @@ do
    ## take some action on $line
   if [[ $line == *"$SOURCES_NAME"* ]]
   then
-  	sed -i "" "s|$line|$NEWLINE|" "../Makefile"
+    echo $NEWLINE
+  	sed -i "" "s|$line|$NEWLINE|" "Makefile"
+  	if [ "$?" != "0" ]
+  	then
+  		echo "Error with sed, sorry, you're probably on an OSX. It sucks."
+  		exit 0
+  	fi
   	break
   fi
-done < "../Makefile"
+done < "Makefile"
 
 echo "Sources updated."
