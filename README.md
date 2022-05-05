@@ -1,5 +1,7 @@
-# makefile_updater
+# Makefile_updater
 Its a really simple script for auto-update the sources in your Makefile.
+
+=================
 
 ## Description
 
